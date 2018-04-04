@@ -14,6 +14,7 @@ reload(dataLoader_oneless)
 reload(miscFunctions)
 
 #np.set_printoptions(precision=0, linewidth=180)
+#oscfit with the amount of bins finalized for this analysis. Since analysis approval bin number, width, etc must remain frozen.
 
 class fitOscParams(object):
 
