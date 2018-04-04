@@ -3,7 +3,8 @@
    :synopsis: Machinery to load all data files into memory and produce histograms.
 
 .. moduleauthor:: Juan-Pablo Yanez (j.p.yanez@ualberta.ca)
-
+modified last march 2018 by trwood. section modifed: make sure total flux of a given particle 
+type remains the same (when adjusting the parent contribution to that flux, ie from kaons or from pions(and muons)
 
 """
 
