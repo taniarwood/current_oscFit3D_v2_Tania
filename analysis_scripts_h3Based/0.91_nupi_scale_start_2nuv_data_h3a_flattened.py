@@ -41,9 +41,9 @@ print dfrac_use, 'float'
 #####
 sys.path.append('/home/trwood/tables_rc1/DPMJETIII_h3a_rc1')
 import Keep_E3Flat_DPM_h3a_rc1 as flux_flattener
-print 'Loading flux flattener module'
+#print 'Loading flux flattener module'
 flat_corr = flux_flattener.MCEqFluxSpline()
-print 'Finished loading flux flattener module'
+#print 'Finished loading flux flattener module'
 
 #####
 # END OF JP'S ADDITION
@@ -51,14 +51,10 @@ print 'Finished loading flux flattener module'
 
 
 #HERE USING TRUE_axis_Mu_8, E5, but changed the names bc am lazy. need to change the dataloading here into loops.  THIS WEEKD?
-#true_axis_mu9 = np.array([[0., 8.],[8., 15.], [15., 25.],[25., 40.], [40.,70.], [70., 120.], [120., 180.], [180., 1000.]])
-#true_axis_e4  = np.array( [ [0., 9.], [9., 15.], [15., 30.],[30., 70.], [70.,1000.]])
 
 true_axis_mu9 = np.array([[0., 9.],[9., 15.], [15., 25.],[25., 40.], [40.,70.], [70., 120.], [120., 1000.]])
 true_axis_e4  = np.array( [ [0., 9.], [9., 15.], [15., 30.],[30., 60.], [60.,1000.]])
-#true_axis_mu9 = np.array([[0., 8.],[8., 15.], [15., 25.],[25., 40.], [40.,70.], [70., 120.], [120., 1000.]])
 
-#true_axis_e4  = np.array( [ [0., 9.], [9., 15.], [15., 30.],[30., 60.],[ 60., 110.0], [110.,1000.]])
 
 #sysfile_use = '/gs/project/ngw-282-ac/trwood/jasper_home/pbs_submit/Andreis_daydream_for_Tests/DRAGON_detector_systematicstA_lowchiBAK.pckl'
 
@@ -76,8 +72,6 @@ sysfile_use = '/gs/project/ngw-282-ac/trwood/jasper_home/pbs_submit/Andreis_dayd
 #sysfile_use ='/project/d/dgrant/trwood/jasper_home/pbs_submit/Andreis_daydream_for_Tests/DRAGON_detector_systematics_gpc.pckl'
 
 #true_axis_mu9 = np.array([[0., 6.],[6., 10.], [10., 15.], [15., 25.],[25., 40.], [40., 63.], [63., 100.], [100., 160.], [160., 1000.]])
-#true_axis_e4  = np.array( [ [0., 7.], [7., 15.], [15., 30.], [30.,1000.]])
-#true_axis_e6  = np.array( [ [0., 7.], [7., 15.], [15., 30.], [30.,50.],[50.,70. ], [70.,1000.]  ])
 
 #####
 # NEUTRINOS ONLY LOADERS
@@ -105,8 +99,8 @@ loader_nobkrd_a = dataLoader.dataLoader(observables =
       #weight_keys = ['tweight_newflat_e', 'tweight_newflat_mu_k', 'tweight_newflat_mu_p'],
       #WHY WOULD JP USE THESE INSTEAD OF THE FLAT WEIGHTS HERE?? MC SHOULD HAVE FLAT >>>
       # weight_keys = ['tweight_e', 'tweight_mu_k', 'tweight_mu_p'],tweight_DMP_h3a_rc1_flat_mu_k_jaspert
-      #weight_keys = ['tweight_DMP_h3a_rc1_flat_e_jaspert', 'tweight_DMP_h3a_rc1_flat_mu_k_jaspert','tweight_DMP_h3a_rc1_flat_mu_p_jaspert'],
-      weight_keys = ['tweight_DMP_GH_flat_e_jaspert', 'tweight_DMP_GH_flat_mu_k_jaspert','tweight_DMP_GH_flat_mu_p_jaspert'],
+      weight_keys = ['tweight_DMP_h3a_rc1_flat_e_jaspert', 'tweight_DMP_h3a_rc1_flat_mu_k_jaspert','tweight_DMP_h3a_rc1_flat_mu_p_jaspert'],
+      #weight_keys = ['tweight_DMP_GH_flat_e_jaspert', 'tweight_DMP_GH_flat_mu_k_jaspert','tweight_DMP_GH_flat_mu_p_jaspert'],
       extra_cuts = {'energy':true_axis_mu9[0]},
       detsys_redo = False,
       verbose = False,
@@ -471,7 +465,7 @@ oscFitResults_fixed =fitter(data_histograms=[data_histo_bkrd_PlusNu],
 
 #pickle.dump(oscFitResults_fixed,open('/home/trwood/pbs_submit/outfiles/test_DMP_DMP_makedata_plusFit_muonsON_atmmuf_0.0_normNOTset.pckl', 'w'))
 
-pickle.dump(oscFitResults_fixed,open('/gs/project/ngw-282-ac/trwood/post_berlin_output/post_berlin_profiles_lowchi_azimov/2nvAsimov_allIN_RESULTS_DPMH3a_data_lowerTol_again_shiftStartpointFractions3_nupiscle_free_start0.91_april5.pckl', 'w'))
+pickle.dump(oscFitResults_fixed,open('/gs/project/ngw-282-ac/trwood/post_berlin_output/post_berlin_profiles_lowchi_azimov/2nv_DPMH3a_data__nupiscle_free_start0.91_april5_flattener.pckl', 'w'))
 
 
 
