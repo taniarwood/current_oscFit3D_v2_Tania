@@ -695,6 +695,8 @@ class dataLoader(object):
                                      'QEL' : self.nutau[self.oscMC]['CC']['scattering'] == 3},
                             }
 
+        # JP removed these that Tania added for keeping the spectrum roughly flat after nupiscale changes. Not necessary anymore
+        '''
       # NuE produced as NuE
   #      nue_nue_ccflux_init    = nue_cc[self.we]*params['norm_e']*nue_cc['energy']**params['gamma']*\
   #                          sf.modRatioNuEBar(nue_cc, params['nu_nubar'], params['nubar_ratio'])*\
@@ -728,7 +730,7 @@ class dataLoader(object):
                               nutau_cc['energy']**params['gamma']*\
                               sf.modRatioNuMuBar(nutau_cc, params['nu_nubar'], params['nubar_ratio'])*\
                               sf.modRatioUpHor_NuMu(nutau_cc, params['uphor_ratio'])
-         
+        '''
 
         # NC - oscillations not calculated. To calculate for NC, just do the previous steps as well.
       #  nue_nc = self.nue[self.oscMC]['NC']
@@ -804,10 +806,24 @@ class dataLoader(object):
                          sf.modRatioNuMuBar(numu_nc, params['nu_nubar'], params['nubar_ratio'])*\
                          sf.modRatioUpHor_NuMu(numu_nc, params['uphor_ratio'])
 
+
+        # JP adding the flux flattener here
+        if self.flatflux_module != None:
+            # Everything that comes from NuMu needs to be corrected (e, mu, tau, nc)
+            nue_numu_ccflux *= self.flatflux_module.correction_factor_jp(nue_cc['energy'], params['nu_pi_scale'])
+            numu_numu_ccflux *= self.flatflux_module.correction_factor_jp(numu_cc['energy'], params['nu_pi_scale'])
+            nutau_numu_ccflux *= self.flatflux_module.correction_factor_jp(nutau_cc['energy'], params['nu_pi_scale'])
+            numu_ncweight *= self.flatflux_module.correction_factor_jp(numu_nc['energy'], params['nu_pi_scale'])
+
+
+# Flux flattener done!
+
 #TANIA ADDED, so now we need the SUM to be = to nue_numu_ccflux_init	
 #	the sum of that array has to be = to the sum that i have stored!
 #so will have to multiply array times one values so sums are equal.
 	#but some are nans... 
+# JP removed it - flattening the flux will take care of this automatically. No need for it.
+        '''
 	if np.sum(nue_numu_ccflux) != 0.0:
 	
 		nue_numu_ccflux *= np.sum(nue_numu_ccflux_init)/np.sum(nue_numu_ccflux) 
@@ -816,7 +832,7 @@ class dataLoader(object):
 		numu_numu_ccflux *= np.sum(numu_numu_ccflux_init)/np.sum(numu_numu_ccflux)
 	if np.sum(nutau_numu_ccflux) != 0.0:
 		nutau_numu_ccflux *= np.sum(nutau_numu_ccflux_init)/np.sum(nutau_numu_ccflux)
-
+        '''
         # Applying HONDA16 correction to fluxes which are pre-2016
         # The correction is applied to all flavors, and is only energy-dependent
         # This section could be moved to the data loading. I placed it here temporarily for testing!
@@ -1431,6 +1447,7 @@ class dataLoader(object):
                  use_kde_bg       = False,
                  use_kde_sys      = False,
                  quantile_mc      = (0., 1.),
+                 flatflux_module  = None,
                  default_settings = {},
                  sysfile          = 'DRAGON_detector_systematics.pckl'):
 
@@ -1491,6 +1508,11 @@ class dataLoader(object):
         self.detsys_nuspecs  = detsys_nuspecs
         self.detsys_muspecs  = detsys_muspecs
         self.unweighted_histograms = {}
+        self.flatflux_module = flatflux_module
+        if self.flatflux_module != None:
+            print 'The flatflux module has been passed successfully!', self.flatflux_module.correction_factor_jp(10.0, 1.4)
+        else:
+            print 'The flatflux module has NOT been passed'
 
         # Import KDE modules if they will be used at all
         if use_kde_bg or use_kde_sys:
