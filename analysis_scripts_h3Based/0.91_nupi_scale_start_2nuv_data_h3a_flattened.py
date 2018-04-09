@@ -62,8 +62,8 @@ true_axis_e4  = np.array( [ [0., 9.], [9., 15.], [15., 30.],[30., 60.], [60.,100
 #sysfile_use = '/gs/project/ngw-282-ac/trwood/jasper_home/pbs_submit/Andreis_daydream_for_Tests/DRAGON_detector_systematics.pckl'
 
 
-sysfile_use = '/gs/project/ngw-282-ac/trwood/jasper_home/pbs_submit/Andreis_daydream_for_Tests/DRAGON_detector_systematicstABC_gil_dec17_DPM.pckl'
-#sysfile_use = '/gs/project/ngw-282-ac/trwood/jasper_home/pbs_submit/Andreis_daydream_for_Tests/DRAGON_detector_systematics_albrecht_DMP_h3a3.pckl'
+#sysfile_use = '/gs/project/ngw-282-ac/trwood/jasper_home/pbs_submit/Andreis_daydream_for_Tests/DRAGON_detector_systematicstABC_gil_dec17_DPM.pckl'
+sysfile_use = '/gs/project/ngw-282-ac/trwood/jasper_home/pbs_submit/Andreis_daydream_for_Tests/DRAGON_detector_systematics_albrecht_DMP_h3a3.pckl'
 
 
 
