@@ -821,10 +821,11 @@ class dataLoader(object):
             numu_ncweight *= self.flatflux_module.correction_factor_jp(numu_nc['energy'], params['nu_pi_scale'])
 
 	# Tania added, things coming from NuE need to be corrected also now  Tania got a bit confused on this bit
-	    nue_nue_ccflux *= self.flatflux_module.correction_factor_jp_e(nue_cc['energy'], params['nu_pi_scale'])
-	    numu_nue_ccflux  *= self.flatflux_module.correction_factor_jp_e(numu_cc['energy'], params['nu_pi_scale'])
-	    nutau_nue_ccflux *= self.flatflux_module.correction_factor_jp_e(nutau_cc['energy'], params['nu_pi_scale'])
-	    nue_ncweight *= self.flatflux_module.correction_factor_jp_e(nue_nc['energy'], params['nu_pi_scale'])
+         #thinking on this I think I may be wrong.. need correctionf_factor_jp_e  (for NuE) fix it 
+	    nue_nue_ccflux *= self.flatflux_module.correction_factor_jp(nue_cc['energy'], params['nu_pi_scale'])
+	    numu_nue_ccflux  *= self.flatflux_module.correction_factor_jp(numu_cc['energy'], params['nu_pi_scale'])
+	    nutau_nue_ccflux *= self.flatflux_module.correction_factor_jp(nutau_cc['energy'], params['nu_pi_scale'])
+	    nue_ncweight *= self.flatflux_module.correction_factor_jp(nue_nc['energy'], params['nu_pi_scale'])
 
 
 # Flux flattener done!
