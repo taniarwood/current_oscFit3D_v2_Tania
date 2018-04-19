@@ -60,7 +60,10 @@ data_dir = ' /home/trwood/MSU_contain_removed/data/'
 ########### PRE move this was the dir. also i forget.. why do we need only muflux in the mu files?? ask JP
 #sim_dir='/gs/project/ngw-282-ac/trwood/jasper_home/MSU_contain_removed/flat_tania3/'
 
-sim_dir='/gs/project/ngw-282-ac/trwood/jasper_home/MSU_contain_removed/flat_tania3_DPM_interm_BAKOct12017_jaspert_BKBK/flat_tania3_jaspert2345/'
+#DEF 1 correct
+#sim_dir='/gs/project/ngw-282-ac/trwood/jasper_home/MSU_contain_removed/flat_tania3_DPM_interm_BAKOct12017_jaspert_BKBK/flat_tania3_jaspert2345/'
+#Def 2 Correct
+sim_dir='/gs/project/ngw-282-ac/trwood/jasper_home/MSU_contain_removed/flat_tania3_DPM_interm_BAKOct12017_jaspert_BKBK/def2/'
 
 #sim_dir='/gs/project/ngw-282-ac/trwood/jasper_home/MSU_contain_removed/flat_tania3_DPM_interm_BAKOct12017_jaspert_BKBK/flat_tania3_jaspert2/'
 #sim_dir='/gs/project/ngw-282-ac/trwood/jasper_home/MSU_contain_removed/flat_tania3_DPM_interm_BAKOct12017_jaspert_BKBK/flat_tania3_jaspert_h3a/'

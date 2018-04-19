@@ -55,15 +55,20 @@ data_dir = ' /home/trwood/MSU_contain_removed/data/'
 #sim_dir='/home/trwood/MSU_sample/MSU_sample_sept2016/oscfit/MSU_tania_repickle/oscfitv2_repickle_analysis_keys_only_flat/'
 
 #sim_dir='/home/trwood/MSU_contain_removed/flat_tania3/'
-
-
-########### PRE move this was the dir. also i forget.. why do we need only muflux in the mu files?? ask JP
 #sim_dir='/gs/project/ngw-282-ac/trwood/jasper_home/MSU_contain_removed/flat_tania3/'
 
-sim_dir='/gs/project/ngw-282-ac/trwood/jasper_home/MSU_contain_removed/flat_tania3_DPM_interm_BAKOct12017_jaspert_BKBK/flat_tania3_jaspert2345/'
 
-#sim_dir='/gs/project/ngw-282-ac/trwood/jasper_home/MSU_contain_removed/flat_tania3_DPM_interm_BAKOct12017_jaspert_BKBK/flat_tania3_jaspert2/'
-#sim_dir='/gs/project/ngw-282-ac/trwood/jasper_home/MSU_contain_removed/flat_tania3_DPM_interm_BAKOct12017_jaspert_BKBK/flat_tania3_jaspert_h3a/'
+#sim_dir = '/gs/project/ngw-282-ac/trwood/jasper_home/MSU_contain_removed/flat_tania3_DPM_interm_BAKOct12017_jaspert_BKBK/flat_tania3_jaspert2/'
+#sim_dir = '/gs/project/ngw-282-ac/trwood/jasper_home/MSU_contain_removed/flat_tania3_DPM_interm_BAKOct12017_jaspert_BKBK/flat_tania3_jaspert2345/'
+sim_dir = '/gs/project/ngw-282-ac/trwood/jasper_home/MSU_contain_removed/flat_tania3_DPM_interm_BAKOct12017_jaspert_BKBK/def2/'
+
+
+
+#sim_dir = '/gs/project/ngw-282-ac/trwood/jasper_home/MSU_contain_removed/flat_tania3_DPM_interm_BAKOct12017_jaspert_BKBK/flat_tania3_jaspert_h3a/'
+
+
+
+
 #sim_dir='/home/trwood/MSU_sample/MSU_sample_sept2016/oscfit/MSU_tania_repickle_newflat/'
 
 
@@ -76,7 +81,7 @@ genie_p1 = {'nue':sim_dir+'Level6.nue.12',
             'nutau':sim_dir+'Level6.nutau.16'}
 #genie_p2 = '.09232015.pckl'
 #genie_p2 = '.tania.pckl'
-genie_p2 = '.muflux.pckl'
+genie_p2 = '.eflux.pckl'
 ## in JP's version this was .nuNu.pckl
 
 #genie_p2 = '.noNu.pckl'

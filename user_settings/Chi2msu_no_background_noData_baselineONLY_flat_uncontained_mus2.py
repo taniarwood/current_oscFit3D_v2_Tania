@@ -60,7 +60,7 @@ data_dir = '/gs/project/ngw-282-ac/trwood/jasper_home/MSU_contain_removed/data/'
 #sim_dir='/home/trwood/MSU_sample/MSU_sample_sept2016/oscfit/MSU_tania_repickle_newflat/'
 #sim_dir = '/gs/project/ngw-282-ac/trwood/jasper_home/MSU_contain_removed/flat_tania3_DPM_interm_BAKOct12017_jaspert_BKBK/flat_tania3_jaspert/'
 
-sim_dir = '/gs/project/ngw-282-ac/trwood/jasper_home/MSU_contain_removed/flat_tania3_DPM_interm_BAKOct12017_jaspert_BKBK/flat_tania3_jaspert2344/'
+sim_dir = '/gs/project/ngw-282-ac/trwood/jasper_home/MSU_contain_removed/flat_tania3_DPM_interm_BAKOct12017_jaspert_BKBK/flat_tania3_jaspert2345/'
 #sim_dir = '/gs/project/ngw-282-ac/trwood/MSU_sample/MSU_sample_sept2016/oscfit/MSU_tania_repickle/oscfitv2_repickle/'
 
 ### This has to be adjusted by the user, depending on the naming convention of the pickle files.

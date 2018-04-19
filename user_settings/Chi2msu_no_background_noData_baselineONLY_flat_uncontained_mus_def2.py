@@ -45,7 +45,7 @@ systematic_mc= True
 #data_dir = '/lustre/home/jpa14/oscfit_files/02182016/'
 
 
-data_dir = ' /home/trwood/MSU_contain_removed/data/'
+data_dir = '/gs/project/ngw-282-ac/trwood/jasper_home/MSU_contain_removed/data/'
 #data_dir = '/home/trwood/MSU_sample/MSU_sample_sept2016/data/'
 
 #sim_dir = '/Users/trwood/MSU_sample_sept2016/oscfit/'
@@ -54,19 +54,17 @@ data_dir = ' /home/trwood/MSU_contain_removed/data/'
 #sim_dir='/home/trwood/Baseline_set/'
 #sim_dir='/home/trwood/MSU_sample/MSU_sample_sept2016/oscfit/MSU_tania_repickle/oscfitv2_repickle_analysis_keys_only_flat/'
 
-#sim_dir='/home/trwood/MSU_contain_removed/flat_tania3/'
 
-
-########### PRE move this was the dir. also i forget.. why do we need only muflux in the mu files?? ask JP
 #sim_dir='/gs/project/ngw-282-ac/trwood/jasper_home/MSU_contain_removed/flat_tania3/'
 
-sim_dir='/gs/project/ngw-282-ac/trwood/jasper_home/MSU_contain_removed/flat_tania3_DPM_interm_BAKOct12017_jaspert_BKBK/flat_tania3_jaspert2345/'
-
-#sim_dir='/gs/project/ngw-282-ac/trwood/jasper_home/MSU_contain_removed/flat_tania3_DPM_interm_BAKOct12017_jaspert_BKBK/flat_tania3_jaspert2/'
-#sim_dir='/gs/project/ngw-282-ac/trwood/jasper_home/MSU_contain_removed/flat_tania3_DPM_interm_BAKOct12017_jaspert_BKBK/flat_tania3_jaspert_h3a/'
 #sim_dir='/home/trwood/MSU_sample/MSU_sample_sept2016/oscfit/MSU_tania_repickle_newflat/'
+#sim_dir = '/gs/project/ngw-282-ac/trwood/jasper_home/MSU_contain_removed/flat_tania3_DPM_interm_BAKOct12017_jaspert_BKBK/flat_tania3_jaspert/'
 
+#for def 2 
+sim_dir = '/gs/project/ngw-282-ac/trwood/jasper_home/MSU_contain_removed/flat_tania3_DPM_interm_BAKOct12017_jaspert_BKBK/def2/'
 
+#For def 1
+#sim_dir = '/gs/project/ngw-282-ac/trwood/jasper_home/MSU_contain_removed/flat_tania3_DPM_interm_BAKOct12017_jaspert_BKBK/flat_tania3_jaspert2345/'
 #sim_dir = '/gs/project/ngw-282-ac/trwood/MSU_sample/MSU_sample_sept2016/oscfit/MSU_tania_repickle/oscfitv2_repickle/'
 
 ### This has to be adjusted by the user, depending on the naming convention of the pickle files.
@@ -75,8 +73,8 @@ genie_p1 = {'nue':sim_dir+'Level6.nue.12',
             'numu':sim_dir+'Level6.numu.14',
             'nutau':sim_dir+'Level6.nutau.16'}
 #genie_p2 = '.09232015.pckl'
-#genie_p2 = '.tania.pckl'
-genie_p2 = '.muflux.pckl'
+genie_p2 = '.tania.pckl'
+
 ## in JP's version this was .nuNu.pckl
 
 #genie_p2 = '.noNu.pckl'
@@ -85,13 +83,23 @@ nugen_nue  = None #data_dir + '10601.pckl'
 nugen_numu = None #data_dir + '10602.pckl'
 
 
+atmmu_data_files = [data_dir + 'Level6.0000.data_bkg1.IC86_2.tania.pckl',
+                     data_dir + 'Level6.0000.data_bkg1.IC86_3.tania.pckl',
+                     data_dir + 'Level6.0000.data_bkg1.IC86_4.tania.pckl']
+#atmmu_data_files = []
+atmmu_data_files_aux = [data_dir + 'Level6.0000.data_bkg2.IC86_2.tania.pckl',
+                     data_dir + 'Level6.0000.data_bkg2.IC86_3.tania.pckl',
+                     data_dir + 'Level6.0000.data_bkg2.IC86_4.tania.pckl']
+
+
+
 
 #atmmu_data_files = [data_dir + 'Level6.0000.data_bkg1.IC86_2.11082016.pckl', 
 #                     data_dir + 'Level6.0000.data_bkg1.IC86_3.11082016.pckl', 
 #                     data_dir + 'Level6.0000.data_bkg1.IC86_4.11082016.pckl']
-atmmu_data_files = []
+#atmmu_data_files = []
 
-atmmu_data_files_aux = []
+#atmmu_data_files_aux = []
 
 atmmu_sets = {}
 pure_noise_files = [ ]
