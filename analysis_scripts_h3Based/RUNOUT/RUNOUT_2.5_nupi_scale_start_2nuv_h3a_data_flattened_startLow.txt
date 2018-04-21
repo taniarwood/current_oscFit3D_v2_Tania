@@ -1,0 +1,30 @@
+----------------------------------------
+Begin PBS Prologue Wed Apr 11 12:37:54 EDT 2018 1523464674
+Job ID:		5447587.gm-1r16-n04.guillimin.clumeq.ca
+Username:	trwood
+Group:		ngw-282-01
+Nodes:		hw-3r03-n02
+End PBS Prologue Wed Apr 11 12:37:55 EDT 2018 1523464675
+----------------------------------------
+/var/spool/pbs/mom_priv/jobs/5447587.gm-1r16-n04.guillimin.clumeq.ca.SC: pbs host = hw-3r03-n02
+/var/spool/pbs/mom_priv/jobs/5447587.gm-1r16-n04.guillimin.clumeq.ca.SC: start time = Wed Apr 11 12:37:55 EDT 2018
+/var/spool/pbs/mom_priv/jobs/5447587.gm-1r16-n04.guillimin.clumeq.ca.SC: end time = Wed Apr 11 12:37:58 EDT 2018
+/var/spool/pbs/mom_priv/jobs/5447587.gm-1r16-n04.guillimin.clumeq.ca.SC: Job Duration = 3 seconds
+/var/spool/pbs/mom_priv/jobs/5447587.gm-1r16-n04.guillimin.clumeq.ca.SC: done processing
+----------------------------------------
+Begin PBS Epilogue Wed Apr 11 12:38:00 EDT 2018 1523464680
+Job ID:		5447587.gm-1r16-n04.guillimin.clumeq.ca
+Username:	trwood
+Group:		ngw-282-01
+Job Name:	2.5submit_flattened_startLow_h3a_data.sh
+Session:	14836
+Limits:		neednodes=1:ppn=8,nodes=1:ppn=8,pmem=3700mb,walltime=20:00:00
+Resources:	cput=00:00:00,energy_used=0,mem=0kb,vmem=0kb,walltime=00:00:06
+Queue:		serial-short
+Account:	ngw-282-aa
+Exit code:	0
+Nodes:	hw-3r03-n02
+Killing leftovers...
+
+End PBS Epilogue Wed Apr 11 12:38:01 EDT 2018 1523464681
+----------------------------------------

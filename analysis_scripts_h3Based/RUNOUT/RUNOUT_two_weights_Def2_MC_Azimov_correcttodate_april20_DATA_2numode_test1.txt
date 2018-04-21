@@ -1,0 +1,690 @@
+----------------------------------------
+Begin PBS Prologue Fri Apr 20 23:47:38 EDT 2018 1524282458
+Job ID:		5523824.gm-1r16-n04.guillimin.clumeq.ca
+Username:	trwood
+Group:		ngw-282-01
+Nodes:		sw-2r13-n58
+End PBS Prologue Fri Apr 20 23:47:38 EDT 2018 1524282458
+----------------------------------------
+/var/spool/pbs/mom_priv/jobs/5523824.gm-1r16-n04.guillimin.clumeq.ca.SC: pbs host = sw-2r13-n58
+/var/spool/pbs/mom_priv/jobs/5523824.gm-1r16-n04.guillimin.clumeq.ca.SC: start time = Fri Apr 20 23:47:39 EDT 2018
+0.00000000001 string
+1e-11 float
+Loading flux flattener module
+Finished loading flux flattener module
+
+
+Loader A
+
+ ************************************ 
+ **** oscFit3D v1.1 - dataLoader ****
+ ************************************
+
+dataLoader: Initializing user Chi2msu_no_background_noData_baselineONLY_flat_uncontained_numu_def2
+The flatflux module has been passed successfully! 0.767349460264
+dataLoader: Trying to load systematic histograms from file /gs/project/ngw-282-ac/trwood/jasper_home/pbs_submit/Andreis_daydream_for_Tests/DRAGON_detector_systematics_albrecht_DMP_h3a3.pckl
+dataLoader: MC loaded successfully!
+dataLoader: Muon background templates loaded successfully!
+dataLoader: Muon background templates loaded successfully!
+dataLoader: Systematic functions for nue  -  hi_fwd
+dataLoader: Systematic functions for nue  -  hole_ice
+dataLoader: Systematic functions for nue  -  domeff
+dataLoader: Systematic functions for numu  -  hi_fwd
+dataLoader: Systematic functions for numu  -  hole_ice
+dataLoader: Systematic functions for numu  -  domeff
+dataLoader: Systematic functions for nutau  -  hi_fwd
+dataLoader: Systematic functions for nutau  -  hole_ice
+dataLoader: Systematic functions for nutau  -  domeff
+dataLoader: Systematic functions for nc  -  hi_fwd
+dataLoader: Systematic functions for nc  -  hole_ice
+dataLoader: Systematic functions for nc  -  domeff
+dataLoader: Combining systematics for  nue
+dataLoader: Combining systematics for  numu
+dataLoader: Combining systematics for  nutau
+dataLoader: Combining systematics for  nc
+dataLoader: Combining systematics for  atmmu
+dataLoader: Not building systematic functions for atmmu
+
+
+Loader B
+
+ ************************************ 
+ **** oscFit3D v1.1 - dataLoader ****
+ ************************************
+
+dataLoader: Initializing user Chi2msu_no_background_noData_baselineONLY_flat_uncontained_numu_def2
+The flatflux module has been passed successfully! 0.767349460264
+dataLoader: Trying to load systematic histograms from file /gs/project/ngw-282-ac/trwood/jasper_home/pbs_submit/Andreis_daydream_for_Tests/DRAGON_detector_systematics_albrecht_DMP_h3a3.pckl
+dataLoader: MC loaded successfully!
+dataLoader: Muon background templates loaded successfully!
+dataLoader: Muon background templates loaded successfully!
+dataLoader: Systematic functions for nue  -  hi_fwd
+dataLoader: Systematic functions for nue  -  hole_ice
+dataLoader: Systematic functions for nue  -  domeff
+dataLoader: Systematic functions for numu  -  hi_fwd
+dataLoader: Systematic functions for numu  -  hole_ice
+dataLoader: Systematic functions for numu  -  domeff
+dataLoader: Systematic functions for nutau  -  hi_fwd
+dataLoader: Systematic functions for nutau  -  hole_ice
+dataLoader: Systematic functions for nutau  -  domeff
+dataLoader: Systematic functions for nc  -  hi_fwd
+dataLoader: Systematic functions for nc  -  hole_ice
+dataLoader: Systematic functions for nc  -  domeff
+dataLoader: Combining systematics for  nue
+dataLoader: Combining systematics for  numu
+dataLoader: Combining systematics for  nutau
+dataLoader: Combining systematics for  nc
+dataLoader: Combining systematics for  atmmu
+dataLoader: Not building systematic functions for atmmu
+
+
+Loader C
+
+ ************************************ 
+ **** oscFit3D v1.1 - dataLoader ****
+ ************************************
+
+dataLoader: Initializing user Chi2msu_no_background_noData_baselineONLY_flat_uncontained_numu_def2
+The flatflux module has been passed successfully! 0.767349460264
+dataLoader: Trying to load systematic histograms from file /gs/project/ngw-282-ac/trwood/jasper_home/pbs_submit/Andreis_daydream_for_Tests/DRAGON_detector_systematics_albrecht_DMP_h3a3.pckl
+dataLoader: MC loaded successfully!
+dataLoader: Muon background templates loaded successfully!
+dataLoader: Muon background templates loaded successfully!
+dataLoader: Systematic functions for nue  -  hi_fwd
+dataLoader: Systematic functions for nue  -  hole_ice
+dataLoader: Systematic functions for nue  -  domeff
+dataLoader: Systematic functions for numu  -  hi_fwd
+dataLoader: Systematic functions for numu  -  hole_ice
+dataLoader: Systematic functions for numu  -  domeff
+dataLoader: Systematic functions for nutau  -  hi_fwd
+dataLoader: Systematic functions for nutau  -  hole_ice
+dataLoader: Systematic functions for nutau  -  domeff
+dataLoader: Systematic functions for nc  -  hi_fwd
+dataLoader: Systematic functions for nc  -  hole_ice
+dataLoader: Systematic functions for nc  -  domeff
+dataLoader: Combining systematics for  nue
+dataLoader: Combining systematics for  numu
+dataLoader: Combining systematics for  nutau
+dataLoader: Combining systematics for  nc
+dataLoader: Combining systematics for  atmmu
+dataLoader: Not building systematic functions for atmmu
+
+
+Loader D
+
+ ************************************ 
+ **** oscFit3D v1.1 - dataLoader ****
+ ************************************
+
+dataLoader: Initializing user Chi2msu_no_background_noData_baselineONLY_flat_uncontained_numu_def2
+The flatflux module has been passed successfully! 0.767349460264
+dataLoader: Trying to load systematic histograms from file /gs/project/ngw-282-ac/trwood/jasper_home/pbs_submit/Andreis_daydream_for_Tests/DRAGON_detector_systematics_albrecht_DMP_h3a3.pckl
+dataLoader: MC loaded successfully!
+dataLoader: Muon background templates loaded successfully!
+dataLoader: Muon background templates loaded successfully!
+dataLoader: Systematic functions for nue  -  hi_fwd
+dataLoader: Systematic functions for nue  -  hole_ice
+dataLoader: Systematic functions for nue  -  domeff
+dataLoader: Systematic functions for numu  -  hi_fwd
+dataLoader: Systematic functions for numu  -  hole_ice
+dataLoader: Systematic functions for numu  -  domeff
+dataLoader: Systematic functions for nutau  -  hi_fwd
+dataLoader: Systematic functions for nutau  -  hole_ice
+dataLoader: Systematic functions for nutau  -  domeff
+dataLoader: Systematic functions for nc  -  hi_fwd
+dataLoader: Systematic functions for nc  -  hole_ice
+dataLoader: Systematic functions for nc  -  domeff
+dataLoader: Combining systematics for  nue
+dataLoader: Combining systematics for  numu
+dataLoader: Combining systematics for  nutau
+dataLoader: Combining systematics for  nc
+dataLoader: Combining systematics for  atmmu
+dataLoader: Not building systematic functions for atmmu
+
+
+Loader E
+
+ ************************************ 
+ **** oscFit3D v1.1 - dataLoader ****
+ ************************************
+
+dataLoader: Initializing user Chi2msu_no_background_noData_baselineONLY_flat_uncontained_numu_def2
+The flatflux module has been passed successfully! 0.767349460264
+dataLoader: Trying to load systematic histograms from file /gs/project/ngw-282-ac/trwood/jasper_home/pbs_submit/Andreis_daydream_for_Tests/DRAGON_detector_systematics_albrecht_DMP_h3a3.pckl
+dataLoader: MC loaded successfully!
+dataLoader: Muon background templates loaded successfully!
+dataLoader: Muon background templates loaded successfully!
+dataLoader: Systematic functions for nue  -  hi_fwd
+dataLoader: Systematic functions for nue  -  hole_ice
+dataLoader: Systematic functions for nue  -  domeff
+dataLoader: Systematic functions for numu  -  hi_fwd
+dataLoader: Systematic functions for numu  -  hole_ice
+dataLoader: Systematic functions for numu  -  domeff
+dataLoader: Systematic functions for nutau  -  hi_fwd
+dataLoader: Systematic functions for nutau  -  hole_ice
+dataLoader: Systematic functions for nutau  -  domeff
+dataLoader: Systematic functions for nc  -  hi_fwd
+dataLoader: Systematic functions for nc  -  hole_ice
+dataLoader: Systematic functions for nc  -  domeff
+dataLoader: Combining systematics for  nue
+dataLoader: Combining systematics for  numu
+dataLoader: Combining systematics for  nutau
+dataLoader: Combining systematics for  nc
+dataLoader: Combining systematics for  atmmu
+dataLoader: Not building systematic functions for atmmu
+
+
+Loader F
+
+ ************************************ 
+ **** oscFit3D v1.1 - dataLoader ****
+ ************************************
+
+dataLoader: Initializing user Chi2msu_no_background_noData_baselineONLY_flat_uncontained_numu_def2
+The flatflux module has been passed successfully! 0.767349460264
+dataLoader: Trying to load systematic histograms from file /gs/project/ngw-282-ac/trwood/jasper_home/pbs_submit/Andreis_daydream_for_Tests/DRAGON_detector_systematics_albrecht_DMP_h3a3.pckl
+dataLoader: MC loaded successfully!
+dataLoader: Muon background templates loaded successfully!
+dataLoader: Muon background templates loaded successfully!
+dataLoader: Systematic functions for nue  -  hi_fwd
+dataLoader: Systematic functions for nue  -  hole_ice
+dataLoader: Systematic functions for nue  -  domeff
+dataLoader: Systematic functions for numu  -  hi_fwd
+dataLoader: Systematic functions for numu  -  hole_ice
+dataLoader: Systematic functions for numu  -  domeff
+dataLoader: Systematic functions for nutau  -  hi_fwd
+dataLoader: Systematic functions for nutau  -  hole_ice
+dataLoader: Systematic functions for nutau  -  domeff
+dataLoader: Systematic functions for nc  -  hi_fwd
+dataLoader: Systematic functions for nc  -  hole_ice
+dataLoader: Systematic functions for nc  -  domeff
+dataLoader: Combining systematics for  nue
+dataLoader: Combining systematics for  numu
+dataLoader: Combining systematics for  nutau
+dataLoader: Combining systematics for  nc
+dataLoader: Combining systematics for  atmmu
+dataLoader: Not building systematic functions for atmmu
+
+
+Loader G
+
+ ************************************ 
+ **** oscFit3D v1.1 - dataLoader ****
+ ************************************
+
+dataLoader: Initializing user Chi2msu_no_background_noData_baselineONLY_flat_uncontained_numu_def2
+The flatflux module has been passed successfully! 0.767349460264
+dataLoader: Trying to load systematic histograms from file /gs/project/ngw-282-ac/trwood/jasper_home/pbs_submit/Andreis_daydream_for_Tests/DRAGON_detector_systematics_albrecht_DMP_h3a3.pckl
+dataLoader: MC loaded successfully!
+dataLoader: Muon background templates loaded successfully!
+dataLoader: Muon background templates loaded successfully!
+dataLoader: Systematic functions for nue  -  hi_fwd
+dataLoader: Systematic functions for nue  -  hole_ice
+dataLoader: Systematic functions for nue  -  domeff
+dataLoader: Systematic functions for numu  -  hi_fwd
+dataLoader: Systematic functions for numu  -  hole_ice
+dataLoader: Systematic functions for numu  -  domeff
+dataLoader: Systematic functions for nutau  -  hi_fwd
+dataLoader: Systematic functions for nutau  -  hole_ice
+dataLoader: Systematic functions for nutau  -  domeff
+dataLoader: Systematic functions for nc  -  hi_fwd
+dataLoader: Systematic functions for nc  -  hole_ice
+dataLoader: Systematic functions for nc  -  domeff
+dataLoader: Combining systematics for  nue
+dataLoader: Combining systematics for  numu
+dataLoader: Combining systematics for  nutau
+dataLoader: Combining systematics for  nc
+dataLoader: Combining systematics for  atmmu
+dataLoader: Not building systematic functions for atmmu
+
+
+Loader I
+
+ ************************************ 
+ **** oscFit3D v1.1 - dataLoader ****
+ ************************************
+
+dataLoader: Initializing user Chi2msu_no_background_noData_baselineONLY_flat_uncontained_nue_def2
+The flatflux module has been passed successfully! 0.767349460264
+dataLoader: Trying to load systematic histograms from file /gs/project/ngw-282-ac/trwood/jasper_home/pbs_submit/Andreis_daydream_for_Tests/DRAGON_detector_systematics_albrecht_DMP_h3a3.pckl
+dataLoader: MC loaded successfully!
+dataLoader: Muon background templates loaded successfully!
+dataLoader: Muon background templates loaded successfully!
+dataLoader: Systematic functions for nue  -  hi_fwd
+dataLoader: Systematic functions for nue  -  hole_ice
+dataLoader: Systematic functions for nue  -  domeff
+dataLoader: Systematic functions for numu  -  hi_fwd
+dataLoader: Systematic functions for numu  -  hole_ice
+dataLoader: Systematic functions for numu  -  domeff
+dataLoader: Systematic functions for nutau  -  hi_fwd
+dataLoader: Systematic functions for nutau  -  hole_ice
+dataLoader: Systematic functions for nutau  -  domeff
+dataLoader: Systematic functions for nc  -  hi_fwd
+dataLoader: Systematic functions for nc  -  hole_ice
+dataLoader: Systematic functions for nc  -  domeff
+dataLoader: Combining systematics for  nue
+dataLoader: Combining systematics for  numu
+dataLoader: Combining systematics for  nutau
+dataLoader: Combining systematics for  nc
+dataLoader: Combining systematics for  atmmu
+dataLoader: Not building systematic functions for atmmu
+
+
+Loader J
+
+ ************************************ 
+ **** oscFit3D v1.1 - dataLoader ****
+ ************************************
+
+dataLoader: Initializing user Chi2msu_no_background_noData_baselineONLY_flat_uncontained_nue_def2
+The flatflux module has been passed successfully! 0.767349460264
+dataLoader: Trying to load systematic histograms from file /gs/project/ngw-282-ac/trwood/jasper_home/pbs_submit/Andreis_daydream_for_Tests/DRAGON_detector_systematics_albrecht_DMP_h3a3.pckl
+dataLoader: MC loaded successfully!
+dataLoader: Muon background templates loaded successfully!
+dataLoader: Muon background templates loaded successfully!
+dataLoader: Systematic functions for nue  -  hi_fwd
+dataLoader: Systematic functions for nue  -  hole_ice
+dataLoader: Systematic functions for nue  -  domeff
+dataLoader: Systematic functions for numu  -  hi_fwd
+dataLoader: Systematic functions for numu  -  hole_ice
+dataLoader: Systematic functions for numu  -  domeff
+dataLoader: Systematic functions for nutau  -  hi_fwd
+dataLoader: Systematic functions for nutau  -  hole_ice
+dataLoader: Systematic functions for nutau  -  domeff
+dataLoader: Systematic functions for nc  -  hi_fwd
+dataLoader: Systematic functions for nc  -  hole_ice
+dataLoader: Systematic functions for nc  -  domeff
+dataLoader: Combining systematics for  nue
+dataLoader: Combining systematics for  numu
+dataLoader: Combining systematics for  nutau
+dataLoader: Combining systematics for  nc
+dataLoader: Combining systematics for  atmmu
+dataLoader: Not building systematic functions for atmmu
+
+
+Loader K
+
+ ************************************ 
+ **** oscFit3D v1.1 - dataLoader ****
+ ************************************
+
+dataLoader: Initializing user Chi2msu_no_background_noData_baselineONLY_flat_uncontained_nue_def2
+The flatflux module has been passed successfully! 0.767349460264
+dataLoader: Trying to load systematic histograms from file /gs/project/ngw-282-ac/trwood/jasper_home/pbs_submit/Andreis_daydream_for_Tests/DRAGON_detector_systematics_albrecht_DMP_h3a3.pckl
+dataLoader: MC loaded successfully!
+dataLoader: Muon background templates loaded successfully!
+dataLoader: Muon background templates loaded successfully!
+dataLoader: Systematic functions for nue  -  hi_fwd
+dataLoader: Systematic functions for nue  -  hole_ice
+dataLoader: Systematic functions for nue  -  domeff
+dataLoader: Systematic functions for numu  -  hi_fwd
+dataLoader: Systematic functions for numu  -  hole_ice
+dataLoader: Systematic functions for numu  -  domeff
+dataLoader: Systematic functions for nutau  -  hi_fwd
+dataLoader: Systematic functions for nutau  -  hole_ice
+dataLoader: Systematic functions for nutau  -  domeff
+dataLoader: Systematic functions for nc  -  hi_fwd
+dataLoader: Systematic functions for nc  -  hole_ice
+dataLoader: Systematic functions for nc  -  domeff
+dataLoader: Combining systematics for  nue
+dataLoader: Combining systematics for  numu
+dataLoader: Combining systematics for  nutau
+dataLoader: Combining systematics for  nc
+dataLoader: Combining systematics for  atmmu
+dataLoader: Not building systematic functions for atmmu
+
+
+Loader L
+
+ ************************************ 
+ **** oscFit3D v1.1 - dataLoader ****
+ ************************************
+
+dataLoader: Initializing user Chi2msu_no_background_noData_baselineONLY_flat_uncontained_nue_def2
+The flatflux module has been passed successfully! 0.767349460264
+dataLoader: Trying to load systematic histograms from file /gs/project/ngw-282-ac/trwood/jasper_home/pbs_submit/Andreis_daydream_for_Tests/DRAGON_detector_systematics_albrecht_DMP_h3a3.pckl
+dataLoader: MC loaded successfully!
+dataLoader: Muon background templates loaded successfully!
+dataLoader: Muon background templates loaded successfully!
+dataLoader: Systematic functions for nue  -  hi_fwd
+dataLoader: Systematic functions for nue  -  hole_ice
+dataLoader: Systematic functions for nue  -  domeff
+dataLoader: Systematic functions for numu  -  hi_fwd
+dataLoader: Systematic functions for numu  -  hole_ice
+dataLoader: Systematic functions for numu  -  domeff
+dataLoader: Systematic functions for nutau  -  hi_fwd
+dataLoader: Systematic functions for nutau  -  hole_ice
+dataLoader: Systematic functions for nutau  -  domeff
+dataLoader: Systematic functions for nc  -  hi_fwd
+dataLoader: Systematic functions for nc  -  hole_ice
+dataLoader: Systematic functions for nc  -  domeff
+dataLoader: Combining systematics for  nue
+dataLoader: Combining systematics for  numu
+dataLoader: Combining systematics for  nutau
+dataLoader: Combining systematics for  nc
+dataLoader: Combining systematics for  atmmu
+dataLoader: Not building systematic functions for atmmu
+
+
+Loader M
+
+ ************************************ 
+ **** oscFit3D v1.1 - dataLoader ****
+ ************************************
+
+dataLoader: Initializing user Chi2msu_no_background_noData_baselineONLY_flat_uncontained_nue_def2
+The flatflux module has been passed successfully! 0.767349460264
+dataLoader: Trying to load systematic histograms from file /gs/project/ngw-282-ac/trwood/jasper_home/pbs_submit/Andreis_daydream_for_Tests/DRAGON_detector_systematics_albrecht_DMP_h3a3.pckl
+dataLoader: MC loaded successfully!
+dataLoader: Muon background templates loaded successfully!
+dataLoader: Muon background templates loaded successfully!
+dataLoader: Systematic functions for nue  -  hi_fwd
+dataLoader: Systematic functions for nue  -  hole_ice
+dataLoader: Systematic functions for nue  -  domeff
+dataLoader: Systematic functions for numu  -  hi_fwd
+dataLoader: Systematic functions for numu  -  hole_ice
+dataLoader: Systematic functions for numu  -  domeff
+dataLoader: Systematic functions for nutau  -  hi_fwd
+dataLoader: Systematic functions for nutau  -  hole_ice
+dataLoader: Systematic functions for nutau  -  domeff
+dataLoader: Systematic functions for nc  -  hi_fwd
+dataLoader: Systematic functions for nc  -  hole_ice
+dataLoader: Systematic functions for nc  -  domeff
+dataLoader: Combining systematics for  nue
+dataLoader: Combining systematics for  numu
+dataLoader: Combining systematics for  nutau
+dataLoader: Combining systematics for  nc
+dataLoader: Combining systematics for  atmmu
+dataLoader: Not building systematic functions for atmmu
+
+ ************************************ 
+ **** oscFit3D v1.1 - dataLoader ****
+ ************************************
+
+dataLoader: Initializing user Chi2msu_BKGRND_only_flat_uncontained
+The flatflux module has NOT been passed
+dataLoader: Trying to load systematic histograms from file /gs/project/ngw-282-ac/trwood/jasper_home/pbs_submit/Andreis_daydream_for_Tests/DRAGON_detector_systematics_albrecht_DMP_h3a3.pckl
+dataLoader: MC loaded successfully!
+dataLoader: Muon background templates loaded successfully!
+dataLoader: Muon background templates loaded successfully!
+dataLoader: Systematic functions for nue  -  hi_fwd
+dataLoader: Systematic functions for nue  -  hole_ice
+dataLoader: Systematic functions for nue  -  domeff
+dataLoader: Systematic functions for numu  -  hi_fwd
+dataLoader: Systematic functions for numu  -  hole_ice
+dataLoader: Systematic functions for numu  -  domeff
+dataLoader: Systematic functions for nutau  -  hi_fwd
+dataLoader: Systematic functions for nutau  -  hole_ice
+dataLoader: Systematic functions for nutau  -  domeff
+dataLoader: Systematic functions for nc  -  hi_fwd
+dataLoader: Systematic functions for nc  -  hole_ice
+dataLoader: Systematic functions for nc  -  domeff
+dataLoader: Combining systematics for  nue
+dataLoader: Combining systematics for  numu
+dataLoader: Combining systematics for  nutau
+dataLoader: Combining systematics for  nc
+dataLoader: Combining systematics for  atmmu
+dataLoader: Not building systematic functions for atmmu
+
+ ************************************ 
+ **** oscFit3D v1.1 - dataLoader ****
+ ************************************
+
+dataLoader: Initializing user Chi2msu_no_background_noData_baselineONLY_flat_uncontained_mus2
+The flatflux module has NOT been passed
+dataLoader: Trying to load systematic histograms from file /gs/project/ngw-282-ac/trwood/jasper_home/pbs_submit/Andreis_daydream_for_Tests/DRAGON_detector_systematics_albrecht_DMP_h3a3.pckl
+dataLoader: MC loaded successfully!
+dataLoader: Muon background templates loaded successfully!
+dataLoader: Muon background templates loaded successfully!
+dataLoader: Systematic functions for nue  -  hi_fwd
+dataLoader: Systematic functions for nue  -  hole_ice
+dataLoader: Systematic functions for nue  -  domeff
+dataLoader: Systematic functions for numu  -  hi_fwd
+dataLoader: Systematic functions for numu  -  hole_ice
+dataLoader: Systematic functions for numu  -  domeff
+dataLoader: Systematic functions for nutau  -  hi_fwd
+dataLoader: Systematic functions for nutau  -  hole_ice
+dataLoader: Systematic functions for nutau  -  domeff
+dataLoader: Systematic functions for nc  -  hi_fwd
+dataLoader: Systematic functions for nc  -  hole_ice
+dataLoader: Systematic functions for nc  -  domeff
+dataLoader: Combining systematics for  nue
+dataLoader: Combining systematics for  numu
+dataLoader: Combining systematics for  nutau
+dataLoader: Combining systematics for  nc
+dataLoader: Combining systematics for  atmmu
+dataLoader: Not building systematic functions for atmmu
+dataLoader: atmmu_norm  0.38 , noise_norm 0.0
+dataLoader: atmmu_norm  0.38 , noise_norm 0.0
+Start datahist2
+48861.8608985
+Start datahist1
+48861.8608985
+
+ ************************************ 
+ **** oscFit3D v1.1 - dataLoader ****
+ ************************************
+
+dataLoader: Initializing user Chi2msu_no_background_noData_baselineONLY_flat_uncontained_numu_def2
+The flatflux module has NOT been passed
+dataLoader: Trying to load systematic histograms from file /gs/project/ngw-282-ac/trwood/jasper_home/pbs_submit/Andreis_daydream_for_Tests/DRAGON_detector_systematics_albrecht_DMP_h3a3.pckl
+dataLoader: MC loaded successfully!
+dataLoader: Muon background templates loaded successfully!
+dataLoader: Muon background templates loaded successfully!
+dataLoader: Systematic functions for nue  -  hi_fwd
+dataLoader: Systematic functions for nue  -  hole_ice
+dataLoader: Systematic functions for nue  -  domeff
+dataLoader: Systematic functions for numu  -  hi_fwd
+dataLoader: Systematic functions for numu  -  hole_ice
+dataLoader: Systematic functions for numu  -  domeff
+dataLoader: Systematic functions for nutau  -  hi_fwd
+dataLoader: Systematic functions for nutau  -  hole_ice
+dataLoader: Systematic functions for nutau  -  domeff
+dataLoader: Systematic functions for nc  -  hi_fwd
+dataLoader: Systematic functions for nc  -  hole_ice
+dataLoader: Systematic functions for nc  -  domeff
+dataLoader: Combining systematics for  nue
+dataLoader: Combining systematics for  numu
+dataLoader: Combining systematics for  nutau
+dataLoader: Combining systematics for  nc
+dataLoader: Combining systematics for  atmmu
+dataLoader: Not building systematic functions for atmmu
+dataLoader: atmmu_norm  0.38 , noise_norm 0.0
+
+ ************************************ 
+ **** oscFit3D v1.1 - dataLoader ****
+ ************************************
+
+dataLoader: Initializing user Chi2msu_no_background_noData_baselineONLY_flat_uncontained_numu_def2
+The flatflux module has NOT been passed
+dataLoader: Trying to load systematic histograms from file /gs/project/ngw-282-ac/trwood/jasper_home/pbs_submit/Andreis_daydream_for_Tests/DRAGON_detector_systematics_albrecht_DMP_h3a3.pckl
+dataLoader: MC loaded successfully!
+dataLoader: Muon background templates loaded successfully!
+dataLoader: Muon background templates loaded successfully!
+dataLoader: Systematic functions for nue  -  hi_fwd
+dataLoader: Systematic functions for nue  -  hole_ice
+dataLoader: Systematic functions for nue  -  domeff
+dataLoader: Systematic functions for numu  -  hi_fwd
+dataLoader: Systematic functions for numu  -  hole_ice
+dataLoader: Systematic functions for numu  -  domeff
+dataLoader: Systematic functions for nutau  -  hi_fwd
+dataLoader: Systematic functions for nutau  -  hole_ice
+dataLoader: Systematic functions for nutau  -  domeff
+dataLoader: Systematic functions for nc  -  hi_fwd
+dataLoader: Systematic functions for nc  -  hole_ice
+dataLoader: Systematic functions for nc  -  domeff
+dataLoader: Combining systematics for  nue
+dataLoader: Combining systematics for  numu
+dataLoader: Combining systematics for  nutau
+dataLoader: Combining systematics for  nc
+dataLoader: Combining systematics for  atmmu
+dataLoader: Not building systematic functions for atmmu
+dataLoader: atmmu_norm  0.38 , noise_norm 0.0
+
+ ************************************ 
+ **** oscFit3D v1.1 - dataLoader ****
+ ************************************
+
+dataLoader: Initializing user Chi2msu_no_background_noData_baselineONLY_flat_uncontained_numu_def2
+The flatflux module has NOT been passed
+dataLoader: Trying to load systematic histograms from file /gs/project/ngw-282-ac/trwood/jasper_home/pbs_submit/Andreis_daydream_for_Tests/DRAGON_detector_systematics_albrecht_DMP_h3a3.pckl
+dataLoader: MC loaded successfully!
+dataLoader: Muon background templates loaded successfully!
+dataLoader: Muon background templates loaded successfully!
+dataLoader: Systematic functions for nue  -  hi_fwd
+dataLoader: Systematic functions for nue  -  hole_ice
+dataLoader: Systematic functions for nue  -  domeff
+dataLoader: Systematic functions for numu  -  hi_fwd
+dataLoader: Systematic functions for numu  -  hole_ice
+dataLoader: Systematic functions for numu  -  domeff
+dataLoader: Systematic functions for nutau  -  hi_fwd
+dataLoader: Systematic functions for nutau  -  hole_ice
+dataLoader: Systematic functions for nutau  -  domeff
+dataLoader: Systematic functions for nc  -  hi_fwd
+dataLoader: Systematic functions for nc  -  hole_ice
+dataLoader: Systematic functions for nc  -  domeff
+dataLoader: Combining systematics for  nue
+dataLoader: Combining systematics for  numu
+dataLoader: Combining systematics for  nutau
+dataLoader: Combining systematics for  nc
+dataLoader: Combining systematics for  atmmu
+dataLoader: Not building systematic functions for atmmu
+dataLoader: atmmu_norm  0.38 , noise_norm 0.0
+
+ ************************************ 
+ **** oscFit3D v1.1 - dataLoader ****
+ ************************************
+
+dataLoader: Initializing user Chi2msu_no_background_noData_baselineONLY_flat_uncontained_numu_def2
+The flatflux module has NOT been passed
+dataLoader: Trying to load systematic histograms from file /gs/project/ngw-282-ac/trwood/jasper_home/pbs_submit/Andreis_daydream_for_Tests/DRAGON_detector_systematics_albrecht_DMP_h3a3.pckl
+dataLoader: MC loaded successfully!
+dataLoader: Muon background templates loaded successfully!
+dataLoader: Muon background templates loaded successfully!
+dataLoader: Systematic functions for nue  -  hi_fwd
+dataLoader: Systematic functions for nue  -  hole_ice
+dataLoader: Systematic functions for nue  -  domeff
+dataLoader: Systematic functions for numu  -  hi_fwd
+dataLoader: Systematic functions for numu  -  hole_ice
+dataLoader: Systematic functions for numu  -  domeff
+dataLoader: Systematic functions for nutau  -  hi_fwd
+dataLoader: Systematic functions for nutau  -  hole_ice
+dataLoader: Systematic functions for nutau  -  domeff
+dataLoader: Systematic functions for nc  -  hi_fwd
+dataLoader: Systematic functions for nc  -  hole_ice
+dataLoader: Systematic functions for nc  -  domeff
+dataLoader: Combining systematics for  nue
+dataLoader: Combining systematics for  numu
+dataLoader: Combining systematics for  nutau
+dataLoader: Combining systematics for  nc
+dataLoader: Combining systematics for  atmmu
+dataLoader: Not building systematic functions for atmmu
+dataLoader: atmmu_norm  0.38 , noise_norm 0.0
+
+ ************************************ 
+ **** oscFit3D v1.1 - dataLoader ****
+ ************************************
+
+dataLoader: Initializing user Chi2msu_no_background_noData_baselineONLY_flat_uncontained_numu_def2
+The flatflux module has NOT been passed
+dataLoader: Trying to load systematic histograms from file /gs/project/ngw-282-ac/trwood/jasper_home/pbs_submit/Andreis_daydream_for_Tests/DRAGON_detector_systematics_albrecht_DMP_h3a3.pckl
+dataLoader: MC loaded successfully!
+dataLoader: Muon background templates loaded successfully!
+dataLoader: Muon background templates loaded successfully!
+dataLoader: Systematic functions for nue  -  hi_fwd
+dataLoader: Systematic functions for nue  -  hole_ice
+dataLoader: Systematic functions for nue  -  domeff
+dataLoader: Systematic functions for numu  -  hi_fwd
+dataLoader: Systematic functions for numu  -  hole_ice
+dataLoader: Systematic functions for numu  -  domeff
+dataLoader: Systematic functions for nutau  -  hi_fwd
+dataLoader: Systematic functions for nutau  -  hole_ice
+dataLoader: Systematic functions for nutau  -  domeff
+dataLoader: Systematic functions for nc  -  hi_fwd
+dataLoader: Systematic functions for nc  -  hole_ice
+dataLoader: Systematic functions for nc  -  domeff
+dataLoader: Combining systematics for  nue
+dataLoader: Combining systematics for  numu
+dataLoader: Combining systematics for  nutau
+dataLoader: Combining systematics for  nc
+dataLoader: Combining systematics for  atmmu
+dataLoader: Not building systematic functions for atmmu
+dataLoader: atmmu_norm  0.38 , noise_norm 0.0
+
+ ************************************ 
+ **** oscFit3D v1.1 - dataLoader ****
+ ************************************
+
+dataLoader: Initializing user Chi2msu_no_background_noData_baselineONLY_flat_uncontained_numu_def2
+The flatflux module has NOT been passed
+dataLoader: Trying to load systematic histograms from file /gs/project/ngw-282-ac/trwood/jasper_home/pbs_submit/Andreis_daydream_for_Tests/DRAGON_detector_systematics_albrecht_DMP_h3a3.pckl
+dataLoader: MC loaded successfully!
+dataLoader: Muon background templates loaded successfully!
+dataLoader: Muon background templates loaded successfully!
+dataLoader: Systematic functions for nue  -  hi_fwd
+dataLoader: Systematic functions for nue  -  hole_ice
+dataLoader: Systematic functions for nue  -  domeff
+dataLoader: Systematic functions for numu  -  hi_fwd
+dataLoader: Systematic functions for numu  -  hole_ice
+dataLoader: Systematic functions for numu  -  domeff
+dataLoader: Systematic functions for nutau  -  hi_fwd
+dataLoader: Systematic functions for nutau  -  hole_ice
+dataLoader: Systematic functions for nutau  -  domeff
+dataLoader: Systematic functions for nc  -  hi_fwd
+dataLoader: Systematic functions for nc  -  hole_ice
+dataLoader: Systematic functions for nc  -  domeff
+dataLoader: Combining systematics for  nue
+dataLoader: Combining systematics for  numu
+dataLoader: Combining systematics for  nutau
+dataLoader: Combining systematics for  nc
+dataLoader: Combining systematics for  atmmu
+dataLoader: Not building systematic functions for atmmu
+dataLoader: atmmu_norm  0.38 , noise_norm 0.0
+
+ ************************************ 
+ **** oscFit3D v1.1 - dataLoader ****
+ ************************************
+
+dataLoader: Initializing user Chi2msu_no_background_noData_baselineONLY_flat_uncontained_numu_def2
+The flatflux module has NOT been passed
+dataLoader: Trying to load systematic histograms from file /gs/project/ngw-282-ac/trwood/jasper_home/pbs_submit/Andreis_daydream_for_Tests/DRAGON_detector_systematics_albrecht_DMP_h3a3.pckl
+dataLoader: MC loaded successfully!
+dataLoader: Muon background templates loaded successfully!
+dataLoader: Muon background templates loaded successfully!
+dataLoader: Systematic functions for nue  -  hi_fwd
+dataLoader: Systematic functions for nue  -  hole_ice
+dataLoader: Systematic functions for nue  -  domeff
+dataLoader: Systematic functions for numu  -  hi_fwd
+dataLoader: Systematic functions for numu  -  hole_ice
+dataLoader: Systematic functions for numu  -  domeff
+dataLoader: Systematic functions for nutau  -  hi_fwd
+dataLoader: Systematic functions for nutau  -  hole_ice
+dataLoader: Systematic functions for nutau  -  domeff
+dataLoader: Systematic functions for nc  -  hi_fwd
+dataLoader: Systematic functions for nc  -  hole_ice
+dataLoader: Systematic functions for nc  -  domeff
+dataLoader: Combining systematics for  nue
+dataLoader: Combining systematics for  numu
+dataLoader: Combining systematics for  nutau
+dataLoader: Combining systematics for  nc
+dataLoader: Combining systematics for  atmmu
+dataLoader: Not building systematic functions for atmmu
+dataLoader: atmmu_norm  0.38 , noise_norm 0.0
+
+ ***************************----------------------------------------
+Begin PBS Epilogue Fri Apr 20 23:49:10 EDT 2018 1524282550
+Job ID:		5523824.gm-1r16-n04.guillimin.clumeq.ca
+Username:	trwood
+Group:		ngw-282-01
+Job Name:	two_weights_Def2_MC_Azimov_run_april20_data.sh
+Session:	24964
+Limits:		neednodes=1:ppn=8,nodes=1:ppn=8,pmem=3700mb,walltime=20:00:00
+Resources:	cput=00:06:53,energy_used=0,mem=2588444kb,vmem=3611744kb,walltime=00:01:32
+Queue:		serial-short
+Account:	ngw-282-aa
+Exit code:	271
+Nodes:	sw-2r13-n58
+Killing leftovers...
+
+End PBS Epilogue Fri Apr 20 23:49:11 EDT 2018 1524282551
+----------------------------------------
