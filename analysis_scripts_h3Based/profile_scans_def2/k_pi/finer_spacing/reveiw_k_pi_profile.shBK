@@ -1,0 +1,35 @@
+#/bin/bash
+#0.03487
+for num in $(seq 0.10 .2 3.00);do
+
+        echo $num
+        normbinfix=$num
+        echo '#!/bin/bash' >> $num.submit.sh
+	#echo '#PBS -l nodes=1:ppn=1' >> $num.submit.sh
+	echo '#PBS -l nodes=1:ppn=8,pmem=3700m,walltime=18:00:00' >> $num.submit.sh
+    #    echo '#PBS -A ngw-282-ac' >> $num.submit.sh
+	#echo '#PBS -l naccesspolicy=singlejob ' >> $num.submit.sh
+	#PBS -l nodes=1:ppn=3,pmem=3700m,walltime=08:00:00
+	echo '#PBS -A ngw-282-aa' >> $num.submit.sh
+	##PBS -e /home/trwood/p
+	echo '#PBS -e /gs/project/ngw-282-ac/trwood/jasper_home/JP_fraction_original_jan26_test_lessbins/analysis_scripts_h3Based/profile_scans_def2/ERROUT/k_pi/'$num'h3a_h3aERRORoutput_.txt' >> $num.submit.sh
+        echo -n '#PBS -o /gs/project/ngw-282-ac/trwood/jasper_home/JP_fraction_original_jan26_test_lessbins/analysis_scripts_h3Based/profile_scans_def2/RUNOUT/k_pi/'$num'h3a_h3arunoutput.txt' >> $num.submit.sh
+	echo '   ' >> $num.submit.sh
+        echo '#PBS -V' >> $num.submit.sh
+
+	echo 'echo "$0: pbs job id = ${PBS_JOBID}"' >> $num.submit.sh
+	echo 'echo "$0: pbs host = `hostname`"' >> $num.submit.sh
+	echo 'echo "$0: start time = `date`"' >> $num.submit.sh
+	echo 'export StartTime=`date '+%s'`' >> $num.submit.sh
+        echo '  ' >> $num.submit.sh
+	echo 'cd /gs/project/ngw-282-ac/trwood/jasper_home/JP_fraction_original_jan26_test_lessbins/analysis_scripts_h3Based/profile_scans_def2/k_pi' >> $num.submit.sh
+#        echo 'PYTHONPATH=/gs/project/ngw-282-ac/trwood/oscFit3D_v2.0_Tania_Jan8_Drangon_chi/oscFit3D_v2.0_Tania:$PYTHONPATH python /home/trwood/pbs_submit/norm_1scan/DRAGON_Chi2_forwardFoldMSU_Jan7.py $normbinfix' >> $num.submit.sh
+	echo 'python /gs/project/ngw-282-ac/trwood/jasper_home/JP_fraction_original_jan26_test_lessbins/analysis_scripts_h3Based/profile_scans_def2/k_pi/def2_4weights_flattener_h3a_h3a_2nv_k_pi.py ' $normbinfix >> $num.submit.sh
+        echo '	' >> $num.submit.sh
+        echo 'export EndTime=`date '+%s'`' >> $num.submit.sh
+        echo 'echo "$0: end time = `date`"' >> $num.submit.sh
+        echo 'echo "$0: Job Duration = `expr $EndTime - $StartTime` seconds"' >> $num.submit.sh
+        echo 'echo "$0: done processing"' >> $num.submit.sh
+        echo 'exit 0' >> $num.submit.sh
+
+done
