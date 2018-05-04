@@ -770,7 +770,10 @@ class dataLoader(object):
         # NuTau produced as NuMu
         nutau_numu_ccflux_init   = (nutau_cc[self.wmu]+1.0*nutau_cc[self.wmu_pi])#*\
 
+
         # NC - oscillations not calculated. To calculate for NC, just do the previous steps as well.
+        nue_nc = self.nue[self.oscMC]['NC']    #assign 
+        numu_nc = self.numu[self.oscMC]['NC']
         nue_ncweight_init  =       (nue_nc[self.we]+ 1.0* nue_nc[self.we_pi])
 
         numu_ncweight_init  =      (numu_nc[self.wmu]+1.0*numu_nc[self.wmu_pi])
@@ -814,8 +817,8 @@ class dataLoader(object):
         
 
         # NC - oscillations not calculated. To calculate for NC, just do the previous steps as well.
-        nue_nc = self.nue[self.oscMC]['NC']
-        numu_nc = self.numu[self.oscMC]['NC']
+    #    nue_nc = self.nue[self.oscMC]['NC']  don't reassign. moved assignment of value to init code above
+    #    numu_nc = self.numu[self.oscMC]['NC']
 
 
  
