@@ -750,41 +750,37 @@ class dataLoader(object):
         # The parameters that modify the flux were derived from the Barr paper
 
         # NuE produced as NuE
-        nue_nue_ccflux    = (nue_cc[self.we] + params['nu_pi_scale']*nue_cc[self.we_pi])*\
-			    params['norm_e']*nue_cc['energy']**params['gamma']*\
-                            sf.modRatioNuEBar(nue_cc, params['nu_nubar'], params['nubar_ratio'])*\
-                            sf.modRatioUpHor_NuE(nue_cc, params['uphor_ratio'])
-
-
+        nue_nue_ccflux    = (nue_cc[self.we] + params['nu_pi_scale']*nue_cc[self.we_pi])#*\
+			   # params['norm_e']*nue_cc['energy']
         # NuE produced as NuMu
-        nue_numu_ccflux   = (nue_cc[self.wmu]+params['nu_pi_scale']*nue_cc[self.wmu_pi])*\
-                            nue_cc['energy']**params['gamma']*\
-                            sf.modRatioNuMuBar(nue_cc, params['nu_nubar'], params['nubar_ratio'])*\
-                            sf.modRatioUpHor_NuMu(nue_cc, params['uphor_ratio'])
+        nue_numu_ccflux   = (nue_cc[self.wmu]+params['nu_pi_scale']*nue_cc[self.wmu_pi])#*\
+                            #nue_cc['energy']**params['gamma']*\
+                            #sf.modRatioNuMuBar(nue_cc, params['nu_nubar'], params['nubar_ratio'])*\
+                            #sf.modRatioUpHor_NuMu(nue_cc, params['uphor_ratio'])
 
         # NuMu produced as NuE
-        numu_nue_ccflux   = (numu_cc[self.we] + params['nu_pi_scale']*numu_cc[self.we_pi])*\
-			    params['norm_e']*numu_cc['energy']**params['gamma']*\
-                            sf.modRatioNuEBar(numu_cc, params['nu_nubar'], params['nubar_ratio'])*\
-                            sf.modRatioUpHor_NuE(numu_cc, params['uphor_ratio'])
+        numu_nue_ccflux   = (numu_cc[self.we] + params['nu_pi_scale']*numu_cc[self.we_pi])#*\
+			    #params['norm_e']*numu_cc['energy']**params['gamma']*\
+                            #sf.modRatioNuEBar(numu_cc, params['nu_nubar'], params['nubar_ratio'])*\
+                            #sf.modRatioUpHor_NuE(numu_cc, params['uphor_ratio'])
         
         # NuMu produced as NuMu
-        numu_numu_ccflux  = (numu_cc[self.wmu]+params['nu_pi_scale']*numu_cc[self.wmu_pi])*\
-                            numu_cc['energy']**params['gamma']*\
-                            sf.modRatioNuMuBar(numu_cc, params['nu_nubar'], params['nubar_ratio'])*\
-                            sf.modRatioUpHor_NuMu(numu_cc, params['uphor_ratio'])
+        numu_numu_ccflux  = (numu_cc[self.wmu]+params['nu_pi_scale']*numu_cc[self.wmu_pi])#*\
+                           # numu_cc['energy']**params['gamma']*\
+                           # sf.modRatioNuMuBar(numu_cc, params['nu_nubar'], params['nubar_ratio'])*\
+                           # sf.modRatioUpHor_NuMu(numu_cc, params['uphor_ratio'])
 
         # NuTau produced as NuE
-        nutau_nue_ccflux    = (nutau_cc[self.we] + params['nu_pi_scale']* nutau_cc[self.we_pi])*\
-			      params['norm_e']*nutau_cc['energy']**params['gamma']*\
-                              sf.modRatioNuEBar(nutau_cc, params['nu_nubar'], params['nubar_ratio'])*\
-                              sf.modRatioUpHor_NuE(nutau_cc, params['uphor_ratio'])
+        nutau_nue_ccflux    = (nutau_cc[self.we] + params['nu_pi_scale']* nutau_cc[self.we_pi])#*\
+			     # params['norm_e']*nutau_cc['energy']**params['gamma']*\
+                            #  sf.modRatioNuEBar(nutau_cc, params['nu_nubar'], params['nubar_ratio'])*\
+                             # sf.modRatioUpHor_NuE(nutau_cc, params['uphor_ratio'])
         
         # NuTau produced as NuMu
-        nutau_numu_ccflux   = (nutau_cc[self.wmu]+params['nu_pi_scale']*nutau_cc[self.wmu_pi])*\
-                              nutau_cc['energy']**params['gamma']*\
-                              sf.modRatioNuMuBar(nutau_cc, params['nu_nubar'], params['nubar_ratio'])*\
-                              sf.modRatioUpHor_NuMu(nutau_cc, params['uphor_ratio'])
+        nutau_numu_ccflux   = (nutau_cc[self.wmu]+params['nu_pi_scale']*nutau_cc[self.wmu_pi])#*\
+                              #nutau_cc['energy']**params['gamma']*\
+                              #sf.modRatioNuMuBar(nutau_cc, params['nu_nubar'], params['nubar_ratio'])*\
+                              #sf.modRatioUpHor_NuMu(nutau_cc, params['uphor_ratio'])
         
 
         # NC - oscillations not calculated. To calculate for NC, just do the previous steps as well.
@@ -801,15 +797,15 @@ class dataLoader(object):
                 self.P_numu_to_nus= self.oscCalc.GetProbToNuS(numu_nc['energy'],
                                                               numu_nc['zenith'],numu_nc['ptype'])  
 
-        nue_ncweight  = (nue_nc[self.we]+ params['nu_pi_scale']* nue_cc[self.we_pi])*\
-			params['norm_e']*nue_nc['energy']**params['gamma']*\
-                        sf.modRatioNuEBar(nue_nc, params['nu_nubar'], params['nubar_ratio'])*\
-                        sf.modRatioUpHor_NuE(nue_nc, params['uphor_ratio'])
+        nue_ncweight  = (nue_nc[self.we]+ params['nu_pi_scale']* nue_nc[self.we_pi])
+		#*params['norm_e']#*nue_nc['energy']**params['gamma']*\
+                 #       sf.modRatioNuEBar(nue_nc, params['nu_nubar'], params['nubar_ratio'])*\
+                  #      sf.modRatioUpHor_NuE(nue_nc, params['uphor_ratio'])
 
-        numu_ncweight  = (numu_nc[self.wmu]+params['nu_pi_scale']*numu_nc[self.wmu_pi])*\
-                         numu_nc['energy']**params['gamma']*\
-                         sf.modRatioNuMuBar(numu_nc, params['nu_nubar'], params['nubar_ratio'])*\
-                         sf.modRatioUpHor_NuMu(numu_nc, params['uphor_ratio'])
+        numu_ncweight  = (numu_nc[self.wmu]+params['nu_pi_scale']*numu_nc[self.wmu_pi])#*\
+                  #       numu_nc['energy']**params['gamma']*\
+                   #      sf.modRatioNuMuBar(numu_nc, params['nu_nubar'], params['nubar_ratio'])*\
+                    #     sf.modRatioUpHor_NuMu(numu_nc, params['uphor_ratio'])
 
 
         # JP adding the flux flattener here

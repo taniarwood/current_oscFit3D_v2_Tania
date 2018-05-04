@@ -1,0 +1,38 @@
+#/bin/bash
+for hist in $(seq 0 1 150);do
+	echo $hist
+	echo hisnum=$hist
+	for num in $(seq 0.50 .1 5.00);do
+
+		echo $num
+		normbinfix=$num
+		echo '#!/bin/bash' >> $hist.$num.submit.sh
+#echo '#PBS -l nodes=1:ppn=1' >> $hist.$num.submit.sh
+		echo '#PBS -l nodes=1:ppn=8,pmem=3700m,walltime=18:00:00' >> $hist.$num.submit.sh
+#    echo '#PBS -A ngw-282-ac' >> $hist.$num.submit.sh
+#echo '#PBS -l naccesspolicy=singlejob ' >> $hist.$num.submit.sh
+#PBS -l nodes=1:ppn=3,pmem=3700m,walltime=08:00:00
+		echo '#PBS -A ngw-282-aa' >> $hist.$num.submit.sh
+##PBS -e /home/trwood/p
+		echo '#PBS -e /gs/project/ngw-282-ac/trwood/jasper_home/JP_fraction_original_jan26_test_lessbins/analysis_scripts_h3Based/profile_scans_def2/k_pi/k_pi_quanties/errout/'$hist.$num'ERRORoutput.txt' >> $hist.$num.submit.sh
+		echo -n '#PBS -o /gs/project/ngw-282-ac/trwood/jasper_home/JP_fraction_original_jan26_test_lessbins/analysis_scripts_h3Based/profile_scans_def2/k_pi/k_pi_quanties/runout/'$hist.$num'runoutput.txt' >> $hist.$num.submit.sh
+		echo '   ' >> $hist.$num.submit.sh
+		echo '#PBS -V' >> $hist.$num.submit.sh
+
+		echo 'echo "$0: pbs job id = ${PBS_JOBID}"' >> $hist.$num.submit.sh
+		echo 'echo "$0: pbs host = `hostname`"' >> $hist.$num.submit.sh
+		echo 'echo "$0: start time = `date`"' >> $hist.$num.submit.sh
+		echo 'export StartTime=`date '+%s'`' >> $hist.$num.submit.sh
+		echo '  ' >> $hist.$num.submit.sh
+		echo 'cd /gs/project/ngw-282-ac/trwood/jasper_home/JP_fraction_original_jan26_test_lessbins/analysis_scripts_h3Based/profile_scans_def2/k_pi/k_pi_quanties' >> $hist.$num.submit.sh
+		#        echo 'PYTHONPATH=/gs/project/ngw-282-ac/trwood/oscFit3D_v2.0_Tania_Jan8_Drangon_chi/oscFit3D_v2.0_Tania:$PYTHONPATH python /home/trwood/pbs_submit/norm_1scan/DRAGON_Chi2_forwardFoldMSU_Jan7.py $normbinfix' >> $hist.$num.submit.sh
+		echo 'python /gs/project/ngw-282-ac/trwood/jasper_home/JP_fraction_original_jan26_test_lessbins/analysis_scripts_h3Based/profile_scans_def2/k_pi/k_pi_quanties/quantiles_k_pi_h3a_h3a_def2_2nv_k_pi.py  ' $normbinfix  '  '  $hist >> $hist.$num.submit.sh
+		echo '	' >> $hist.$num.submit.sh
+		echo 'export EndTime=`date '+%s'`' >> $hist.$num.submit.sh
+		echo 'echo "$0: end time = `date`"' >> $hist.$num.submit.sh
+		echo 'echo "$0: Job Duration = `expr $EndTime - $StartTime` seconds"' >> $hist.$num.submit.sh
+		echo 'echo "$0: done processing"' >> $hist.$num.submit.sh
+		echo 'exit 0' >> $hist.$num.submit.sh
+
+	done
+done
