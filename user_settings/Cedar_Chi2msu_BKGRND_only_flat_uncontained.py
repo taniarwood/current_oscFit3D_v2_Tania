@@ -59,7 +59,7 @@ systematic_mc= True
 #sim_dir = '/gs/project/ngw-282-ac/trwood/jasper_home/MSU_contain_removed/flat_tania3_DPM_interm_BAKOct12017_jaspert_BKBK/flat_tania3_jaspert/'
 
 
-sim_dir='/home/trwood/projects/def-dgrant/trwood/MSU_contain_removed/def2/'
+sim_dir='/home/trwood/projects/def-dgrant/trwood/MSU_contain_removed/flat_tania3_jaspert2/'
 data_dir='/home/trwood/projects/def-dgrant/trwood/MSU_contain_removed/data/'
 
 #sim_dir = '/home/trwood/MSU_sample/MSU_sample_sept2016/oscfit/MSU_tania_repickle/oscfitv2_repickle_analysis_keys_only/'
