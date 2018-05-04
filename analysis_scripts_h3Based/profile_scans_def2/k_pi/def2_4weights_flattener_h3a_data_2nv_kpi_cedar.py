@@ -3,7 +3,7 @@
 import os, sys
 #modules_dir = '/home/trwood/JP_fraction_original_jan26_test/modules'
 #modules_dir = '/gs/project/ngw-282-ac/trwood/jasper_home/JP_fraction_original_jan26_test_lessbins/modules'
-modules_dir = ' /home/trwood/projects/def-dgrant/trwood/osc_analysis/current_oscFit3D_v2_Tania/modules'
+modules_dir = '/home/trwood/projects/def-dgrant/trwood/osc_analysis/current_oscFit3D_v2_Tania/modules'
 #modules_dir = '/project/d/dgrant/trwood/jasper_home/JP_fraction_original_jan26_test_lessbins/modules'
 sys.path.append(modules_dir)
 
@@ -41,11 +41,12 @@ print dfrac_use, 'float'
 #####
 # ADDITION TO KEEP THE FLUX FLAT AFTER CHANGING THE PI-SCALE (jp)
 #####
-sys.path.append('/home/trwood/tables_rc1/DPMJETIII_h3a_rc1')
+#sys.path.append('/home/trwood/tables_rc1/DPMJETIII_h3a_rc1')
+sys.path.append('/home/trwood/projects/def-dgrant/trwood/tables_rc1_git/tables_rc1/DPMJETIII_h3a_rc1')
 #import Keep_E3Flat_DPM_h3a_rc1 as flux_flattener  #correct for definiton one. also turn off NuE Corrector
 import Combined_reg_table_pionsOFFTable_Keep_E3Flat_DPM_h3a_rc1 as flux_flattener   #correct for defintion two. 
 print 'Loading flux flattener module'
-flat_corr = flux_flattener.MCEqFluxSpline()
+flat_corr = flux_flattener.MCEqFluxSpline('/home/trwood/projects/def-dgrant/trwood/tables_rc1_git/tables_rc1/')
 
 print 'Finished loading flux flattener module'
 
@@ -294,8 +295,8 @@ data_settings = {
 ####################  
 # try re-normalizing to correct norm_Nu basically ... 
 ###########################
-
-data_histo_bkrd_PlusNu = pickle.load(open('/home/trwood/pbs_submit/FractionForwdFold/tw_scripts/Checks_Binning_Berlin/Data_Feb_2018.pckl'))
+data_histo_bkrd_PlusNu = pickle.load(open('/home/trwood/projects/def-dgrant/trwood/osc_analysis/current_oscFit3D_v2_Tania/data/Data_Feb_2018.pckl'))
+#data_histo_bkrd_PlusNu = pickle.load(open('/home/trwood/pbs_submit/FractionForwdFold/tw_scripts/Checks_Binning_Berlin/Data_Feb_2018.pckl'))
 data_hist2 = loader.loadMCasData(data_settings, statistical_fluctuations=False)
 data_hist = loader.loadMCasData(data_settings, statistical_fluctuations=False)
 print 'Events in data_hist2', np.sum(data_hist2)
